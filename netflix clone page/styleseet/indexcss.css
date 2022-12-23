@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
+    transition: all 1s;
 }
 
 body {
@@ -11,11 +12,15 @@ body {
     padding: 0;
     width: 100%;
     height: auto;
+    background-color: rgba(54, 51, 51, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .container {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-image: url("../image/2.jpg");
     background-size: cover;
     background-position: right center;
@@ -40,7 +45,6 @@ header {
     margin-top: 20px;
     margin-left: 7%;
     align-items: baseline;
-    transition: all .5;
 }
 
 .sign-in {
@@ -61,6 +65,11 @@ header {
     transition: all .5s;
 }
 
+p {
+    font-weight: normal;
+    font-size: 20px;
+}
+
 button:hover {
     box-shadow: 0 0 3px 2px rgba(255, 255, 255, .6);
     cursor: pointer;
@@ -75,6 +84,26 @@ section {
     color: #fff;
     font-weight: lighter;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.discription-note {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.discription {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -85,7 +114,6 @@ h1 {
     margin: 30px auto;
     width: 100%;
     display: flex;
-    margin-left: 10%;
 }
 
 .email-form input {
@@ -93,6 +121,7 @@ h1 {
     height: 70px;
     font-size: 20px;
     border: none;
+    text-align: center;
 }
 
 .email-form button {
@@ -104,8 +133,99 @@ h1 {
     transition: all .5s;
 }
 
+.external {
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgb(7, 6, 6);
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.note {
+    height: 100%;
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    place-items: center;
+}
+
+.second-note {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    place-items: left;
+}
+
+.second-note h1,
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second-note p {
+    font-size: 25px;
+}
+
+.second-note h1 {
+    text-align: left;
+    font-weight: 0;
+    font-size: 50px;
+}
+
+.video {
+    position: relative;
+}
+
+.video video {
+    background: transparent;
+}
+
 
 /*you must work media query for tablets then we will talk*/
+
+@media(max-width:1000px) {
+    .container {}
+    section {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        height: fit-content;
+        margin-top: -20px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .company-name {
+        font-size: 40px;
+    }
+    .email-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .email-form input {
+        text-align: center;
+    }
+    .email-form button {
+        height: 80px;
+        width: 50%;
+        margin: auto;
+    }
+}
 
 @media (max-width:700px) {
     header {
@@ -135,5 +255,23 @@ h1 {
         max-width: 100px;
         height: 70px;
         margin: auto;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+    .note {
+        margin: 0 auto;
+    }
+    .second-note {
+        text-align: center;
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        place-items: center;
+    }
+    .video {
+        margin: 0 auto;
     }
 }

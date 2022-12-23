@@ -8,31 +8,54 @@
     <title>Netflix clone page</title>
     <link rel="stylesheet" href="styleseet/indexcss.css">
 </head>
-<div class="container">
-    <header>
-        <div class="company-name">
-            <h3>NETFLIX</h3>
-        </div>
-        <div class="sign-in">
-            <button>Sign In</button>
-        </div>
-    </header>
-    <section>
-        <div class="discription-note">
-            <h1>Unlimited movies, Tv <br> shows, and more.</h1>
-        </div>
-        <div class="discription">
-            Watch anywhere. Cancel anytime. <br><br> Ready to watch? Enter Your email to create or restart Your membership.
-        </div>
-        <div class="email-form">
-            <input type="text" name="email" placeholder="Email address">
-            <button>Get Started ></button>
-        </div>
-    </section>
-</div>
 
 <body>
-
+    <div class="container">
+        <header>
+            <div class="company-name">
+                <h3>NETFLIX</h3>
+            </div>
+            <div class="sign-in">
+                <button>Sign In</button>
+            </div>
+        </header>
+        <section>
+            <div class="discription-note">
+                <h1>Unlimited movies, Tv <br> shows, and more.</h1>
+            </div>
+            <div class="discription">
+                <p>Watch anywhere. Cancel anytime. <br><br> Ready to watch? Enter Your email to create or restart Your membership.</p>
+            </div>
+            <div class="email-form">
+                <input type="text" name="email" placeholder="Email address">
+                <button><p>Get Started ></p></button>
+            </div>
+        </section>
+    </div>
+    <div class="external">
+        <div class="content">
+            <div class="note">
+                <div class="discription-note second-note">
+                    <h1>Engjoy on Your TV.</h1>
+                </div>
+                <div class="discription second-note">
+                    <p>Watch on Smart TVs, Playstation,Xbox,Chromecast,Apple TV, <br>Blu-ray Players, and more.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video id="vid" width="330" height="330" controls autoplay muted loop poster="image/3.jpg" outline="none">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var div = document.getElementById("vid");
+        window.onload(div.playbackRate = .5);
+        /* document.getElementById("videoSlowMode").addEventListener("click", function() {
+             document.getElementById("vid").playbackRate = .4;
+         });*/
+    </script>
 </body>
 
 </html>
