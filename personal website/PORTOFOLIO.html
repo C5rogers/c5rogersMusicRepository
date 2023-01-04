@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="stylesheet/portofolio.css">
+    <script>
+        var handleClickTest = function(event, className, flagForTest) {
+            if (flagForTest == 0) {
+                document.querySelector(className).setAttribute('style', 'display:block;');
+                flagForTest = 1;
+            } else {
+                document.querySelector(className).setAttribute('style', 'display:none;');
+                flagForTest = 0;
+            }
+            return flagForTest;
+        }
+        var button = document.querySelectorAll(".menu-btn");
+        button.forEach(box => {
+            var flag = 0;
+            box.addEventListener("click", function() {
+                flag = handleClickTest(event, ".list-content", flag);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="menu">
+            <button class="menu-btn">MENU</button>
+            <nav class="list-content">
+                <ul>
+                    <li><a href="index.html" target="_self">HOME</a></li>
+                    <li><a href="index.html" target="_self">PORTOFOLIO</a></li>
+                    <li><a href="#" target="_self">TESTIMONIAL</a></li>
+                    <li><a href="#" target="_self">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <header>
+                <div class="name">
+                    <h1>Natenael Haylemariam</h1>
+                </div>
+                <div class="exp">
+                    <span>welcome to my blog. here i will post news and updates</span>
+                </div>
+            </header>
+            <div class="content">
+                <div class="head">
+                    <div class="serch-bar">
+                        <form action="">
+                            <input type="text" name="serch" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="catagories">
+                        <div class="dropdown">
+                            <!-----you use display inline block for the while container and absolute relative positioning with display block property-->
+                            <button class="dropbtn"><span>Catagories</span><img src="image/drop.png" width="30px" height="auto" alt=""></button>
+                            <div class="dropdown-content">
+                                <a href="#">All</a>
+                                <a href="#">News</a>
+                                <a href="#">Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <!--------in this case when the image is clicked or when read more is clicked then the 
+                    content will appeaer flex-direction:column and it also include footer -->
+                    <div class="cont" id="cont1">
+                        <div class="img">
+                            <img src="image/car.jpg">
+                        </div>
+                        <div class="txt">
+                            <div class="txt-head">
+                                <h2>Calling from nowhere</h2>
+                                <span>15/3/1994/E.C</span>
+                            </div>
+                            <article>
+                                <p>I was born in 1994 in march in the middle of the month. i belive that i came to this world with some spetial purpose. cuz that i don't incounter any thing that is not usefull. in any case i was born in ethiopia in addis
+                                    abeba and my mother and father give me name called natenael, which i don't have aydia what it means but they told me that it is mensioned in wholy bible. by the time i arrived my family is in the merge of enforcing
+                                    it's capability and my born is there successfull result so i have a good luck.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cont" id="cont2 ">
+                        <div class="txt">
+                            <div class="text-head">
+                                <h2>Begining the jorney</h2>
+                                <span>1/1/1998/E.C</span>
+                            </div>
+                            <article>
+                                <p>I start the journey of knowledge when i am 4 years old. by the time as my mother told me that i can't agree with child to play with and make some friends, and also i can't do the lerning process also. by the time i was
+                                    inferrior and i can't go freely with another feloow childs and this make some critic point in my mind for the rest of my life. after a while i began to adapt the environment and i try to make some connection but still
+                                    i don't have the humer that make people bind to me.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="img">
+                            <img src="image/car2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="cont" id="cont3">
+                        <div class="img">
+                            <img src="image/car3.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="text-head">
+                                <h2>Mean While</h2>
+                                <span>2000-2002</span>
+                            </div>
+                            <article>
+                                <p>
+                                    By this age my child hood is getting exiting and more interesting. that because i know some friends and make some childish connection with others too. and i remember that i have good connection with them is because i lern from my past experience how to
+                                    make friends and make some connection. it is also help me to make things differently and thinking how the child hood is good for us as a child.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cont" id="cont4">
+                        <div class="txt">
+                            <div class="text-head">
+                                <h2>In progress</h2>
+                                <span>2005-2010</span>
+                            </div>
+                            <article>
+                                <p>
+                                    By this time i relise that knowledge is the best thing that we acchive in the road of life and our history. it make sence that lerning new things than sleeping well. i also agree that lerning is more important than money too. but still i regreate that
+                                    i should lern some other knoledges like programming and designing which is simple and can be done with the aid of self with out any other inflwence. i belive i lost a lot of time or just i west time unimportantly. but
+                                    still it is good.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="img">
+                            <img src="image/car4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="cont" id="cont5">
+                        <div class="img">
+                            <img src="image/car5.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="text-head">
+                                <h2>Now</h2>
+                                <span>2011-current</span>
+                            </div>
+                            <article>
+                                <p>
+                                    Now i have lerning many things including the knowledge gained in the path of life. mostly i spent my time in trying to figure out how things is done and how they wrok. i have big dreeam of being a great man, living a greate life and also make things better
+                                    for others too. i have intended so many things i have bright future to make. and also i have goal to achhive not peoples to impress i belive my future will be big more than i entend and also i make some thing better
+                                    than now too. i will be goodest person in the world you ever encounter.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cont" id="cont6">
+                        <div class="txt">
+                            <div class="text-head">
+                                <h2>Advice</h2>
+                                <span>for companys and individuals</span>
+                            </div>
+                            <article>
+                                <p><span>For Companys: </span>I say for companys i may be slow learner but i am good at remembering things and making stuff together i belive that i can make some thing different and i say that <span>HIRE ME</span></p>
+                                <p><span>For Individuals: </span>Please don't west you'r time by doing unimportant thigs, make some goal and plan to achive them, make you'r self bussy, think everyday every morning and every evening. support other pepples
+                                    to cuz it will pay back letter.</p>
+                            </article>
+                        </div>
+                        <div class="img">
+                            <img src="image/car6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

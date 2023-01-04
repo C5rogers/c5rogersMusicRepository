@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: rgba(54, 51, 51, 0.7);
+    background-color: rgb(54, 51, 51);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -77,7 +77,7 @@ button:hover {
 
 section {
     position: absolute;
-    left: 15%;
+    left: 23%;
     bottom: 50%;
     top: 30%;
     text-align: center;
@@ -107,7 +107,7 @@ section {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 2em;
 }
 
 .email-form {
@@ -135,7 +135,7 @@ h1 {
 
 .external {
     width: 100%;
-    min-height: 50vh;
+    min-height: 70vh;
     background-color: rgb(7, 6, 6);
     color: #fff;
     display: flex;
@@ -151,6 +151,7 @@ h1 {
 
 .note {
     height: 100%;
+    max-width: 30em;
     display: flex;
     margin: auto 0;
     flex-direction: column;
@@ -170,13 +171,18 @@ p {
 }
 
 .second-note p {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .second-note h1 {
     text-align: left;
-    font-weight: 0;
-    font-size: 50px;
+    font-weight: normal;
+}
+
+.heading {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 .video {
@@ -188,10 +194,255 @@ p {
 }
 
 
+/*this is for the mobile styling for the add tham i was intend to make*/
+
+.mobile {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mobile-image {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.mobile-image img {
+    width: 60%;
+    height: 100vh;
+    margin: auto 0;
+}
+
+.add {
+    position: absolute;
+    top: 48%;
+    width: 80%;
+    left: 10%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    place-items: center;
+    border: 2px solid rgba(134, 130, 130, 0.7);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.add .picture {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 20px;
+}
+
+.add .picture img {
+    height: 97px;
+    width: auto;
+}
+
+.add .load img {
+    border-radius: 50%;
+}
+
+.add h4 {
+    font-size: 1.5em;
+}
+
+.second {
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 90%;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .7);
+    border: hidden;
+}
+
+.shadow2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    opacity: 100%;
+}
+
+.third {
+    min-height: 30vh;
+    display: flex;
+    padding: 20px;
+    place-items: center;
+}
+
+.third h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.third p {
+    font-size: 1.5em;
+}
+
+.text {
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.anime {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.anime img {
+    width: 80%;
+    height: auto;
+}
+
+.fifth {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-form {
+    width: 60%;
+    margin: auto;
+    left: 0;
+}
+
+.mid {
+    width: 60%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dropdown-title {
+    text-align: center;
+}
+
+.dropdown-title h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.dropbtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    place-items: center;
+    background-color: rgba(255, 255, 255, .2);
+    border: none;
+    color: #fff;
+}
+
+.btn-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.dropbtn div p {
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content article {
+    background-color: rgba(255, 255, 255, .2);
+    text-align: left;
+    padding: 15px;
+}
+
+.dropdown-content article p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropbtn:hover {
+    width: 80%;
+    box-shadow: none;
+}
+
+.sixth {
+    display: flex;
+    place-items: center;
+}
+
+.middle {
+    width: 60%;
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content div {
+    line-height: 2.5em;
+}
+
+.middle a {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    position: relative;
+}
+
+.middle a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background-color: aliceblue;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.middle a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+
 /*you must work media query for tablets then we will talk*/
 
 @media(max-width:1000px) {
-    .container {}
     section {
         bottom: 0;
         right: 0;
@@ -200,12 +451,6 @@ p {
         height: fit-content;
         margin-top: -20px;
         padding: 10px;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    p {
-        font-size: 20px;
     }
     .company-name {
         font-size: 40px;
@@ -224,6 +469,78 @@ p {
         height: 80px;
         width: 50%;
         margin: auto;
+    }
+    .external {
+        padding: 10px;
+    }
+    .heading {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: .5em;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .note {
+        max-width: 15em;
+        flex-shrink: 1;
+    }
+    .video {
+        flex-shrink: 0;
+    }
+    video {
+        width: 300px;
+    }
+    .second {
+        flex-direction: row;
+    }
+    .mobile-note {
+        width: 90%;
+        order: 2;
+    }
+    .forth-note {
+        width: 100%;
+    }
+    .mobile {
+        order: 1;
+    }
+    .mobile-image img {
+        width: 70%;
+    }
+    .third h1 {
+        font-size: 2.5em;
+        font-family: inherit;
+        font-weight: normal;
+    }
+    .third p {
+        font-size: 1.3em;
+    }
+    .text {
+        margin-right: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .mid {
+        width: 90%;
+    }
+    .dropbtn {
+        height: 60px;
+    }
+    .second-form .discription p {
+        font-size: 1em;
+    }
+    .dropbtn:hover {
+        width: 90%;
+    }
+    .middle {
+        width: 80%;
     }
 }
 
@@ -273,5 +590,32 @@ p {
     }
     .video {
         margin: 0 auto;
+    }
+    .heading h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .heading p {
+        font-size: .5em;
+    }
+    .second {
+        flex-direction: column;
+    }
+    .mobile-note {
+        order: 1;
+    }
+    .mobile {
+        order: 2;
+    }
+    .forth {
+        flex-direction: column;
+        place-items: center;
+    }
+    .anime {
+        order: 2;
+    }
+    .main-content {
+        flex-direction: column;
     }
 }

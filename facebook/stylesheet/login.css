@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 150vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: beige;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    width: 62vh;
+    height: 70vh;
+    text-align: center;
+}
+
+.campany-name {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 2.3em;
+    color: rgb(15, 105, 223);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -1px;
+    font-stretch: condensed;
+    position: relative;
+}
+
+
+/*.company-name::before {
+    content: 'fɑcebook';
+    display: block;
+    position: absolute;
+    transform: scale(1);
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: brown;
+    font-size: 2.3em;
+    color: rgb(15, 105, 223);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -1px;
+    font-stretch: condensed;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+*/
+
+.main {
+    background-color: #fff;
+    width: 100%;
+    height: 70%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px .1px rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.txt {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .75);
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1em;
+}
+
+form input {
+    width: 85%;
+    height: 20%;
+    padding: 0 4%;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .3);
+}
+
+.btn {
+    width: 100%;
+    height: 20%;
+}
+
+form .btn a button {
+    width: 92%;
+    height: 100%;
+    background-color: rgb(58, 131, 226);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bolder;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.forgot {
+    display: flex;
+    gap: 10px;
+}
+
+.forgot a {
+    color: rgb(28, 142, 187);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1.4px;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.cont {
+    width: 85%;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-spacing: .5em;
+}
+
+.cont .upper {
+    width: 100%;
+    height: 30%;
+    padding-top: 1rem;
+    padding-top: 1em;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    display: block;
+    place-content: center;
+}
+
+.cont .lower {
+    padding: 1em 0;
+}
+
+footer a {
+    word-spacing: -.2em;
+}
+
+footer a,
+.copy-right {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+    font-size: smaller;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copy-right {
+    display: flex;
+    margin: auto 0;
+    place-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:32em) {
+    .add {
+        border: .5px solid rgba(0, 0, 0, .3);
+        position: absolute;
+        left: 100%;
+    }
+}
