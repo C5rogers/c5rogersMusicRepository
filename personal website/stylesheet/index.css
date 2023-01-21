@@ -12,7 +12,7 @@
 /*after finishing your work then ulink this comment*/
 
 @keyframes background-animation {
-    /*0% {
+    0% {
         background-position: left;
     }
     50% {
@@ -20,7 +20,7 @@
     }
     100% {
         background-position: right;
-    }*/
+    }
 }
 
 body {

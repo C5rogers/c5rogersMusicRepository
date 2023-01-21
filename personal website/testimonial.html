@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial page</title>
+    <link rel="stylesheet" href="stylesheet/testimonial.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="navigation">
+                <button class="menu" onclick="menu()">MENU</button>
+                <nav id="menu" class="nav headen">
+                    <ul>
+                        <li><a href="index.html" target="_self">HOME</a></li>
+                        <li><a href="PORTOFOLIO.html" target="_self">PORTOFOLIO</a></li>
+                        <li><a href="#" target="_self">TESTIMONIAL</a></li>
+                        <li><a href="contact.html" target="_self">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="tittle">
+                <div class="smaller">
+                    <p>Natenael Haylemariam</p>
+                </div>
+                <div class="normal">
+                    <p>TESTIMONIAL</p>
+                </div>
+            </div>
+
+            <div class="cont">
+                <div class="contain img"><img src="image/img5.jpg" alt=""></div>
+            </div>
+            <div class="cont right">
+                <div class="contain discription-content">
+                    <div class="logo">
+
+                    </div>
+                    <div class="title">Natenael Haylemariam</div>
+                    <div class="smaller">Jonior website developer</div>
+                    <div class="text-content">
+                        <article>
+                            <p>i spent my whole time in wondering how programming is made to make something do by the computer when you are very far from the task. and i always also wonder that website play biggest role in making tasks more simple and more
+                                manageble that makes the world run very fast. then i decide to learn how they are more interactive with humans that make very good interaction with them inorder to make them confortable and more interractable this make
+                                my life changed more intensively and i would like to change my carrer to this field then i dedicate my time to spent with this work until today i dont't do any thing that would be presents to the out side person but today
+                                i think i make something perfect!.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var menuOpen = 0;
+        var menu = () => {
+            if (!menuOpen) {
+                var div = document.getElementById("menu");
+                div.classList.remove("headen");
+                menuOpen = 1;
+            } else {
+                var div = document.getElementById("menu");
+                div.classList.add("headen");
+                menuOpen = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
