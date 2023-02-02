@@ -12,9 +12,9 @@ class myHeader extends HTMLElement {
                 <li><a href="#">CONTUCT US</a></li>
                 <li><a href="#">REPORT BUG</a></li>
             </ul>
-            <button onclic="hide()" id="hide"><img src="image/3.png" alt=""></button>
+            <button id="hide"><img src="image/3.png" alt=""></button>
         </nav>
-        <button class="menu" onclic="appear()" id="appear"><img src="image/7.png" alt=""></button>
+        <button class="menu" id="appear"><img src="image/7.png" alt=""></button>
     </header>
         `
     }
@@ -56,3 +56,11 @@ class myFooter extends HTMLElement {
     }
 }
 customElements.define("my-footer", myFooter);
+var hide = document.getElementById("hide");
+hide.addEventListener("click", function() {
+    document.getElementById("navigation").style.right = "-100%";
+});
+var display = document.getElementById("appear");
+display.addEventListener("click", function() {
+    document.getElementById("navigation").style.right = "-15%";
+});
