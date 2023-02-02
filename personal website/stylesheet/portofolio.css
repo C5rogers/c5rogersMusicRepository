@@ -4,7 +4,9 @@
     color: #fff;
     transition: all .4s ease-in;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --gradientAnimation: linear-gradient( 45deg, #7335b5, #d45096, #d6b340, #4a8be0, #51cf90, #83db48, #6662b5);
 }
@@ -199,7 +201,7 @@ header .exp {
     background-color: #f9f9f9;
     width: 96%;
     padding: 2%;
-    height: 5em;
+    height: 10em;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
     z-index: 1;
     opacity: 90%;

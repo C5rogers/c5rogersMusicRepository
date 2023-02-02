@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(0,0,0);
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    margin-top: 5em;
+    font-family: 'Big Shoulders Display',cursive;
+}
+h1{
+    color: rgb(240,147,8);
+    animation: todown 5s;
+    text-transform: uppercase;
+    -webkit-animation: todown 5s;
+}
+.container{
+    width: 50.5em;
+    height: 30em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.img0{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-right: 3em;
+    background-image: url("../image/cosmotics.jpeg");
+    background-size: cover;
+    background-position: left;
+    animation: shrink 1s;
+    -webkit-animation: shrink 1s;
+}
+.img0::after,
+.img0::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.img0::after{
+    background: rgb(255,255,255);
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+.img0::before{
+    background: rgb(50,205,50);
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+.img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 3em;
+    margin-right: 3em;
+    background-image: url("../image/musicListeneing2.jpeg");
+    background-size: cover;
+    background-position: center;
+    animation: shrink 1s;
+}
+.img1::after,
+.img1::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+  
+.img1::after {
+    background: rgb(255, 255, 255);
+    transform: rotate(3deg);
+}
+  
+.img1::before {
+    background: rgb(50, 205, 50);
+    transform: rotate(-3deg);
+}
+.img2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 10em;
+    background-image: url("../image/toys.jpeg");
+    background-size: cover;
+    background-position: right;
+    animation: shrink 1s;
+}
+.img2::after,
+.img2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+  
+.img2::after {
+    background: rgba(255, 255, 255, 0.829);
+    transform: rotate(7deg);
+}
+  
+.img2::before {
+    background: rgba(50, 205, 50, 0.836);
+    transform: rotate(-7deg);
+}
+  
+/* Animations Effect */
+@keyframes todown {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    60% {
+        opacity: 0.6;
+        transform: translateY(1.2em);
+        transform: scale(0.5, 0.5);
+        color: rgb(0, 0, 255);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@keyframes shrink {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
