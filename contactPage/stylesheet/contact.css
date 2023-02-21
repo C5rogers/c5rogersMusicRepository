@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .34s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    /* background-image: linear-gradient() */
+    --gradiant: #a67a02, #aede66, #667cde, #be66de, #bf3208;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 2em;
+    height: auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper {
+    width: 100%;
+    height: 50%;
+    background-image: url("../image/car13.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(23, 116, 238, 0.5);
+    background-blend-mode: multiply;
+    color: #ffffff;
+}
+
+.upper header {
+    width: 100%;
+    height: 20%;
+    padding: 1em 1em 0 1em;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.upper header .navigation button,
+.upper header nav button {
+    display: none;
+}
+
+header .logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+header .logo h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo h2::before {
+    position: absolute;
+    content: '';
+    width: 110%;
+    height: 110%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -10px;
+    background-size: 200%;
+    border: aliceblue 1px solid;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, .5);
+}
+
+header nav {
+    width: 60%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+header nav ul {
+    height: 50%;
+    width: 90%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+header nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 0 2px;
+}
+
+header nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgb(3, 66, 138);
+}
+
+.body-of-main {
+    width: 70%;
+    height: 40%;
+    margin: 1em 0 0 10%;
+}
+
+.body-of-main div h1 {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.body-of-main div p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lower {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: aliceblue;
+}
+
+.info-requremnet {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: -25%;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, .4);
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.form form {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .5em;
+}
+
+.title {
+    margin: 2px 0;
+}
+
+.title h4 {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: rgb(7, 47, 94);
+}
+
+.form form .contain {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .5em;
+}
+
+.form form .contain .up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form form .contain .up div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form form .contain .up div input {
+    height: 3em;
+    width: 70%;
+    border: 1px solid rgb(3, 66, 138);
+    background: transparent;
+    font-size: 1em;
+    padding: 0 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(3, 66, 138);
+    outline: none;
+}
+
+.form form .contain .up div label {
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(3, 66, 138);
+}
+
+.form form .contain .low {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form form .contain .low div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form form .contain .low div input {
+    height: 4em;
+    width: 70%;
+    border: 1px solid rgb(3, 66, 138);
+    background: transparent;
+    font-size: 1em;
+    padding: 0 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(3, 66, 138);
+    outline: none;
+}
+
+.form form .contain .low div label {
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(3, 66, 138);
+}
+
+.form form .contain2 {
+    width: 85%;
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form form .contain2 input {
+    height: 4em;
+    border: 1px solid rgb(3, 66, 138);
+    background: transparent;
+    font-size: 1em;
+    padding: 0 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(3, 66, 138);
+    outline: none;
+}
+
+.form form .contain2 label {
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(3, 66, 138);
+}
+
+.send-btn {
+    margin-left: 60%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.send-btn button {
+    height: 5em;
+    width: 5em;
+    border: none;
+    background-color: rgb(2, 38, 78);
+    border-radius: 50%;
+}
+
+.send-btn button:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+}
+
+.send-btn button img {
+    filter: invert(100%);
+}
+
+.another-information {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(5, 4, 78, .9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    color: #ffffff;
+    padding: 0 0 5px 0;
+}
+
+.another-information div a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.another-information div a img {
+    filter: invert(100%);
+}
+
+.another-information div a:hover {
+    color: rgb(59, 142, 238);
+}
+
+@media(max-width:750px) {
+    header .logo {
+        width: 45%;
+    }
+    header .logo h2 {
+        font-size: 1.5em;
+    }
+    header .navigation {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .upper header .navigation button,
+    .upper header nav button {
+        display: block;
+    }
+    header .navigation button {
+        width: 40%;
+        height: 3em;
+        margin-top: auto;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all ease-in .34s;
+    }
+    header .navigation button:hover {
+        background: rgba(255, 255, 255, .2);
+        box-shadow: 0 0 13px 2px rgba(0, 0, 0, .3);
+        border-radius: 3px;
+    }
+    header .navigation button img {
+        width: 50%;
+        height: auto;
+        filter: invert(100%);
+    }
+    header nav {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(59, 135, 223, 0.6);
+        backdrop-filter: blur(10px);
+        z-index: 3;
+        top: 0;
+        right: -100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        border-bottom: none;
+    }
+    header nav button {
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        width: 5em;
+        height: 3em;
+        border: none;
+        background: transparent;
+        transition: all ease-in .34s;
+        cursor: pointer;
+    }
+    header nav button:hover {
+        background-color: rgba(255, 255, 255, .2);
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
+        border-radius: 3px;
+    }
+    header nav button img {
+        filter: invert(100%);
+    }
+    header nav ul {
+        height: 40%;
+        width: 80%;
+        flex-direction: column;
+    }
+    header nav ul li {
+        width: 100%;
+        height: 15%;
+        padding: 0;
+    }
+    header nav ul li:hover {
+        background-color: rgb(0, 0, 0);
+    }
+    .info-requremnet {
+        width: 70%;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+    .form {
+        width: 100%;
+        height: 70%;
+    }
+    .form form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        place-items: center;
+    }
+    .form form .contain {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .form form .contain .up div input {
+        height: 2em;
+        width: 95%;
+    }
+    .form form .contain .up div label {
+        font-size: .8em;
+    }
+    .form form .contain .low div input {
+        height: 2em;
+        width: 95%;
+    }
+    .form form .contain .low div label {
+        font-size: .8em;
+    }
+    .form form .contain2 {
+        width: 90%;
+    }
+    .form form .contain2 input {
+        width: 97.5%;
+        height: 2em;
+    }
+    .form form .contain2 label {
+        font-weight: .8em;
+    }
+    .title {
+        text-align: center;
+    }
+    .title h4 {
+        font-size: 1.2em;
+    }
+    .send-btn {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .send-btn button {
+        width: 20%;
+        height: 100%;
+        background-color: rgb(2, 38, 78);
+        border: none;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: 5%;
+        margin-bottom: 3%;
+    }
+    .send-btn button:hover {
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
+    }
+    .send-btn button img {
+        filter: invert(100%);
+    }
+    .another-information {
+        width: 100%;
+        height: 35%;
+    }
+    .another-information div a {
+        font-size: .8em;
+        gap: 2px;
+    }
+}

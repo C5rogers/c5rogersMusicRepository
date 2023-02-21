@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.reg-form-container {
+    width: 70%;
+    height: fit-content;
+    margin: 1em 0;
+    padding: 2em 0 0 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: aliceblue;
+}
+
+.reg-form-container form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    gap: .7em;
+}
+
+.reg-cont {
+    width: 90%;
+    min-height: 2em;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    gap: 2em;
+    place-items: center;
+}
+
+.reg-cont label {
+    width: 30%;
+    height: 2em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: aqua; */
+    align-self: left;
+    margin-right: auto;
+}
+
+.reg-cont input,
+.reg-cont select {
+    margin: auto;
+    width: 100%;
+    outline: none;
+}
+
+.reg-cont textarea {
+    width: 100%;
+    padding: .5em;
+    outline: none;
+}
+
+.reg-cont input {
+    height: 3em;
+    padding: 0 1em;
+    outline: none;
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .8);
+}
+
+.location {
+    padding: 1em 0;
+}
+
+select option {
+    width: 100%;
+    height: 1em;
+    margin: 0 auto;
+    background-color: rgba(228, 204, 173, .4);
+    font-size: 1em;
+    color: rgb(37, 39, 41);
+    transition: all ease .23s;
+}
+
+select option:hover {
+    background-color: rgb(255, 168, 54);
+}

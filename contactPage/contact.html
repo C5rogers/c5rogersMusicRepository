@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page design</title>
+    <link rel="stylesheet" href="stylesheet/contact.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="upper">
+            <header>
+                <div class="logo">
+                    <h2>Nattys Company</h2>
+                </div>
+                <div class="navigation">
+                    <button id="menu"><img src="image/7.png" alt=""></button>
+                </div>
+                <nav id="nav">
+                    <button id="hide"><img src="image/3.png" alt=""></button>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">DETAIL</a></li>
+                        <li><a href="#">THE COMPANY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="body-of-main">
+                <div>
+                    <h1>Get In Touch</h1>
+                    <p>this is the company official main page to contact<br> just fill the following fom and send us the message, that you want to say and we will respond<br> wihtn 24 hours other wise there is some problem with server not from us.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="info-requremnet">
+                <div class="form-container">
+                    <div class="form">
+                        <form action="#" method="POST">
+                            <div class="title">
+                                <h4>Send Us a Message</h4>
+                            </div>
+                            <div class="contain">
+                                <div class="up">
+                                    <div class="left">
+                                        <input type="text" name="userName" placeholder="User Name">
+                                        <label for="UserName">User Name</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="email" name="userEmail" placeholder="E-mail">
+                                        <label for="userEmail">User Email</label>
+                                    </div>
+                                </div>
+                                <div class="low">
+                                    <div class="left">
+                                        <input type="text" name="userPhoneNumber" placeholder="Phone Number">
+                                        <label for="phoneNumber">User Phone Number</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="text" name="address" placeholder="From Where">
+                                        <label for="address">Address/City-Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contain2">
+                                <input type="text" name="comment" placeholder="Comment..." class="comment">
+                                <label for="comment">Insert What you feel about our community</label>
+                            </div>
+                            <div class="send-btn">
+                                <button><img src="image/send1.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="another-information">
+                        <div class="info-title">
+                            <h3>Contact Information</h3>
+                        </div>
+                        <div class="info-cont">
+                            <a href="#"><img src="image/workers.png">Our Products And Seles</a>
+                        </div>
+                        <div class="info-cont">
+                            <a href="#"><img src="image/network.png" class="network">Our Net Gain And Profit</a>
+                        </div>
+                        <div class="info-cont">
+                            <a href="#"><img src="image/communication.png">Our Company Participation And Aim</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var div = document.getElementById("menu");
+        div.addEventListener("click", function() {
+            document.getElementById("nav").style.right = "0";
+        });
+        var hide = document.getElementById("hide");
+        hide.addEventListener("click", function() {
+            document.getElementById("nav").style.right = "-50%";
+        });
+    </script>
+</body>
+
+</html>

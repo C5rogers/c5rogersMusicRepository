@@ -16,12 +16,12 @@ class mySignInAndLogin extends HTMLElement {
                 <label for="password">Password:</label>
                 <input type="Password" name="password" placeholder="Password" class="inpu">
             </div>
-            <div>
+            <div class="buttons">
                 <input type="submit" name="login" value="Log In">
                 <input type="reset" name="reset" value="Reset">
             </div>
         </form>
-        <div>
+        <div class="toSignup">
             <button id="goSignup">i dont have an account</button>
         </div>
         </div>
@@ -46,12 +46,12 @@ class mySignInAndLogin extends HTMLElement {
                         <label for="confPassword">Confirm Password:</label>
                         <input type="Password" name="confPass" placeholder="Confirm Password" class="inpu">
                     </div>
-                    <div>
+                    <div class="sex-div">
                         <label for="sex">Sex:</label>
-                        <div class="sex">
-                            <input type="radio" name="sex" value="m"><label for="male">Male</label>
-                            <input type="radio" name="sex" value="f"><label for="femail">Femail</label>
-                        </div>
+                        <select name="sex" id="sex">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </div>
                     <div class="button">
                         <input type="submit" name="signup" value="Sign Up" class="submit-btn">
@@ -72,10 +72,11 @@ customElements.define("login-signup", mySignInAndLogin);
 var login = document.getElementById("goLogin");
 login.addEventListener("click", function() {
     var div = document.getElementById("inner");
-    div.classList.add(".rotation");
+    div.style.transform = "rotateY(180deg)";
+
 });
 var signup = document.getElementById("goSignup");
 signup.addEventListener("click", function() {
     var div = document.getElementById("inner");
-    div.classList.remove(".rotation");
+    div.style.transform = "rotateY(0deg)";
 });

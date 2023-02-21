@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="stylesheet/registration.css">
+</head>
+
+<body>
+    <div class="reg-form-container">
+        <form action="/" method="" enctype="multipart/form-data">
+            <div class="reg-cont">
+                <label for="title">Title:</label>
+                <input type="text" name="title" placeholder="Title">
+            </div>
+
+            <div class="reg-cont">
+                <label for="company">Company:</label>
+                <input type="text" name="company" placeholder="Company">
+            </div>
+            <div class="reg-cont">
+                <label for="location">Location:</label>
+                <select name="location" id="location" class="location">
+                    <option value="Addis Abeba">Addis Abeba</option>
+                    <option value="Bahir Dar">Bahir Dar</option>
+                    <option value="Mekele">Mekele</option>
+                    <option value="Ambo">Ambo</option>
+                    <option value="Adama">Adama</option>
+                    <option value="Bishoftu">Bishoftu</option>
+                    <option value="Tafo">Tafo</option>
+                    <option value="Debrebrehan">Debrebrehan</option>
+                    <option value="Ankober">Ankober</option>
+                    <option value="Lalibela">Lalibela</option>
+                    <option value="Gonder">Gonder</option>
+                </select>
+            </div>
+            <div class="reg-cont">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="reg-cont">
+                <label for="website">Webstie:</label>
+                <input type="Url" name="website" placeholder="Website">
+            </div>
+            <div class="reg-cont">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Description...."></textarea>
+            </div>
+            <div class="reg-cont">
+                <label for="profile">Profile Picture</label>
+                <input type="file" name="profile" id="profile">
+            </div>
+            <div class="reg-cont">
+                <label for="tags">Select Tags:</label>
+                <select name="tags" id="tags" multiple size="10">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Css">Css</option>
+                    <option value="Laravel">Laravel</option>
+                    <option value="Java">Java</option>
+                    <option value="Sql">Sql</option>
+                    <option value="C++">C++</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Node">Node</option>
+                    <option value="React">React</option>
+                </select>
+            </div>
+            <div class="reg-cont">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+            <div class="reg-cont">
+                <input type="submit" name="create" value="Create">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- return [
+'title'=>$this->faker->sentence(),
+'tags'=>'laravel,javascript,html,css',
+'company'=>$this->faker->company(),
+'location'=>$this->faker->city(),
+'email'=>$this->faker->email(),
+'website'=>$this->faker->url(),
+'description'=>$this->faker->paragraph(7) -->
