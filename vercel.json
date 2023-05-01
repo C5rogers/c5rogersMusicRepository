@@ -7,5 +7,9 @@
             "includeFiles": ["db.json"]
         }
     }],
-    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
+    "rewrites": [{
+        "source": "/((?!api/.*).*)",
+        "destination": "/index.html"
+    }]
 }
