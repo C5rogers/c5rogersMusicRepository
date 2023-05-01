@@ -1,0 +1,44 @@
+{
+  "musics": [
+    {
+      "name": "america",
+      "artist": "eminum",
+      "catagory": "RAP",
+      "duration": "7",
+      "liked": true,
+      "id": 10
+    },
+    {
+      "name": "follow me",
+      "artist": "ledy gaga",
+      "catagory": "r&B",
+      "duration": "7",
+      "liked": false,
+      "id": 11
+    },
+    {
+      "name": "melorena",
+      "artist": "melor",
+      "catagory": "melor",
+      "duration": "6",
+      "liked": true,
+      "id": 14
+    },
+    {
+      "name": "ye feker akukulu",
+      "artist": "abel ",
+      "catagory": "jaz",
+      "duration": "7",
+      "liked": false,
+      "id": 15
+    },
+    {
+      "name": "another one",
+      "artist": "dj kalid",
+      "catagory": "rap",
+      "duration": "7",
+      "liked": true,
+      "id": 16
+    }
+  ]
+}
