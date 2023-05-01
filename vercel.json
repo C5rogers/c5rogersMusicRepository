@@ -7,9 +7,5 @@
             "includeFiles": ["db.json"]
         }
     }],
-    "routes": [
-        { "src": "/", "dest": "/" },
-        { "src": "/recruit", "dest": "/" },
-        { "src": "/tos", "dest": "/" }
-    ]
+    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
